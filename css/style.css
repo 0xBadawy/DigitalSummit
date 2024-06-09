@@ -186,8 +186,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-/*  auto scroll images */
 
+
+
+/*  auto scroll images */
 
 @keyframes slide {
     from {
@@ -195,14 +197,14 @@ body::-webkit-scrollbar-thumb {
     }
 
     to {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
 .logos {
     overflow: hidden;
-    padding: 60px 0;
-    background: rgb(0, 0, 0);
+    padding: 6px 0;
+    background: rgb(255, 255, 255);
     white-space: nowrap;
     position: relative;
 }
@@ -211,7 +213,7 @@ body::-webkit-scrollbar-thumb {
 .logos:after {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 200px;
     height: 100%;
     content: "";
     z-index: 2;
@@ -237,33 +239,45 @@ body::-webkit-scrollbar-thumb {
 }
 
 .logos-slide img {
-    height: 100px;
-    margin: 0 0px;
+    height: 160px;
+    margin: 0 30px;
 }
 
-.container .logos .logos-slide div {
+.logos .logos-slide div {
     display: inline-block;
     margin: 0 40px;
     text-align: center;
 }
 
-.container .logos .logos-slide div img {
-    height: 100px;
+ .logos .logos-slide div img {
+    height: 150px;
     margin: 0 0px;
-    }
+}
     
-.container .logos .logos-slide img:hover {
+.logos .logos-slide img:hover {
         filter: blur(0px);
-        transform: scale(1.3);
+        transform: scale(1.1);
         transition: 0.5s;
         filter: drop-shadow(1px 0px 0px #FFF) drop-shadow(-1px 0px 0px #FFF) drop-shadow(0px 1px 0px #FFF) drop-shadow(0px -1px 0px #FFF);
 }
-.container .logos .logos-slide h6 {
+.logos .logos-slide h6 {
     color: #FFF;
     font-size: 20px;
     font-weight: 600;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.logos .heading {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container .logos {
+  padding: 50px 0;
 }
 
 /*  end auto scroll images */
